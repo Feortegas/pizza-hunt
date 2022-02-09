@@ -17,6 +17,8 @@ const PizzaSchema = new Schema(
         },
         size: {
             type: String,
+            required: true,
+            enum: ['Personal', 'Small', 'Medium', 'Large', 'Extra Large'],
             default: 'Large'
         },
         toppings: [],    // use [] to define it as Array data type, or use the word Array instead
